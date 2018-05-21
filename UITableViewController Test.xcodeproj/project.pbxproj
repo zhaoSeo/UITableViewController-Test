@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE5B452920B29D5E00CE6B74 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B452820B29D5E00CE6B74 /* FoodStoreTableViewCell.swift */; };
 		FE62B61420AC062000499BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62B61320AC062000499BC0 /* AppDelegate.swift */; };
-		FE62B61620AC062000499BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62B61520AC062000499BC0 /* ViewController.swift */; };
 		FE62B61920AC062000499BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE62B61720AC062000499BC0 /* Main.storyboard */; };
 		FE62B61B20AC062100499BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE62B61A20AC062100499BC0 /* Assets.xcassets */; };
 		FE62B61E20AC062100499BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE62B61C20AC062100499BC0 /* LaunchScreen.storyboard */; };
 		FE62B62920AC062100499BC0 /* UITableViewController_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62B62820AC062100499BC0 /* UITableViewController_TestTests.swift */; };
 		FE62B63420AC062100499BC0 /* UITableViewController_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62B63320AC062100499BC0 /* UITableViewController_TestUITests.swift */; };
+		FE62B64220AC06C300499BC0 /* myTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62B64120AC06C300499BC0 /* myTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE5B452820B29D5E00CE6B74 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
 		FE62B61020AC062000499BC0 /* UITableViewController Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableViewController Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE62B61320AC062000499BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE62B61520AC062000499BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE62B61820AC062000499BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE62B61A20AC062100499BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE62B61D20AC062100499BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		FE62B62F20AC062100499BC0 /* UITableViewController TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewController TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE62B63320AC062100499BC0 /* UITableViewController_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController_TestUITests.swift; sourceTree = "<group>"; };
 		FE62B63520AC062100499BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE62B64120AC06C300499BC0 /* myTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				FE62B61320AC062000499BC0 /* AppDelegate.swift */,
-				FE62B61520AC062000499BC0 /* ViewController.swift */,
 				FE62B61720AC062000499BC0 /* Main.storyboard */,
+				FE5B452820B29D5E00CE6B74 /* FoodStoreTableViewCell.swift */,
+				FE62B64120AC06C300499BC0 /* myTableViewController.swift */,
 				FE62B61A20AC062100499BC0 /* Assets.xcassets */,
 				FE62B61C20AC062100499BC0 /* LaunchScreen.storyboard */,
 				FE62B61F20AC062100499BC0 /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE62B61620AC062000499BC0 /* ViewController.swift in Sources */,
+				FE62B64220AC06C300499BC0 /* myTableViewController.swift in Sources */,
+				FE5B452920B29D5E00CE6B74 /* FoodStoreTableViewCell.swift in Sources */,
 				FE62B61420AC062000499BC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
