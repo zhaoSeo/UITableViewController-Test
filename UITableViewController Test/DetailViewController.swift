@@ -8,26 +8,56 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var cellImage: String = ""
     var cellLocation: String = ""
     var cellTel: String = ""
+    var cellMenu: String = ""
     
     @IBOutlet weak var cellImageView: UIImageView!
-    @IBOutlet weak var cellLocationLabel: UILabel!
-    @IBOutlet weak var cellTelLabel: UILabel!
+    @IBOutlet weak var detailTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //delegate connection
+        detailTableView.delegate = self
+        detailTableView.dataSource = self
         cellImageView.image = UIImage(named: cellImage)
-        cellLocationLabel.text = "주소 : \(cellLocation)"
-        cellTelLabel.text = "Tel : \(cellTel)"
         
 
         // Do any additional setup after loading the view.
     }
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
+//        if indexPath.row == 0 {
+//            cell.textLabel?.text = "주소 : \(cellLocation)"
+//            return cell
+//        } else if indexPath.row == 1 {
+//            cell.textLabel?.text = "전화번호 : \(cellTel)"
+//            return cell
+//        } else {
+//            cell.textLabel?.text = "메뉴 : \(cellMenu)"
+//            return cell
+//        }
+        switch indexPath.row {
+        case 0 :
+            cell.textLabel?.text = "주소 : \(cellLocation)"
+            return cell
+        case 1 :
+            cell.textLabel?.text = "전화번호 : \(cellTel)"
+            return cell
+        default:
+            cell.textLabel?.text = "메뉴 : \(cellMenu)"
+            return cell
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
